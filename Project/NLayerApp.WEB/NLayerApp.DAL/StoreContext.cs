@@ -13,8 +13,9 @@ namespace NLayerApp.DAL
     {
         public DbSet<Store> Stores { get; set; }
         public DbSet<Item> Items { get; set; }
-      //  public StoreContext(string connectionString="MobileContext") : base(connectionString)
-        public StoreContext():base("DefaultConnection")
+        // 
+        //public StoreContext():base("DefaultConnection")
+        public StoreContext(string connectionString) : base(connectionString)
         { }
         static StoreContext()
         {

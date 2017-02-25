@@ -49,11 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Intefaces\IRepository.cs" />
+    <Compile Include="Intefaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\201702241300149_initial.cs" />
     <Compile Include="Migrations\201702241300149_initial.Designer.cs">
       <DependentUpon>201702241300149_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repositories\ItemRepository.cs" />
+    <Compile Include="Repositories\StoreRepository.cs" />
     <Compile Include="StoreContext.cs" />
     <Compile Include="Entities\Item.cs" />
     <Compile Include="Entities\Store.cs" />
@@ -68,6 +72,7 @@
       <DependentUpon>201702241300149_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
