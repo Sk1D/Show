@@ -12,6 +12,10 @@ namespace NLayerApp.DAL.Repositories
     class ItemRepository : IRepository<Item>
     {
         private StoreContext db;
+        public ItemRepository(StoreContext context)
+        {
+            this.db = context;
+        }
         public void Create(Item value)
         {
             db.Items.Add(value);

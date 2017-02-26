@@ -56,6 +56,7 @@
       <DependentUpon>201702241300149_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repositories\EFUnitOfWork.cs" />
     <Compile Include="Repositories\ItemRepository.cs" />
     <Compile Include="Repositories\StoreRepository.cs" />
     <Compile Include="StoreContext.cs" />
