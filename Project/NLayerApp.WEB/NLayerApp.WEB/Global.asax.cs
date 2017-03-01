@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLayerApp.DI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,7 @@ namespace NLayerApp.WEB
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            DependencyResolver.SetResolver(new NinjectDependencyResolver());
         }
     }
 }

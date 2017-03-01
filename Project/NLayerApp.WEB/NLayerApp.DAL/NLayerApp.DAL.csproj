@@ -51,9 +51,9 @@
   <ItemGroup>
     <Compile Include="Intefaces\IRepository.cs" />
     <Compile Include="Intefaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\201702241300149_initial.cs" />
-    <Compile Include="Migrations\201702241300149_initial.Designer.cs">
-      <DependentUpon>201702241300149_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201703010843544_init.cs" />
+    <Compile Include="Migrations\201703010843544_init.Designer.cs">
+      <DependentUpon>201703010843544_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositories\EFUnitOfWork.cs" />
@@ -69,11 +69,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702241300149_initial.resx">
-      <DependentUpon>201702241300149_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703010843544_init.resx">
+      <DependentUpon>201703010843544_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

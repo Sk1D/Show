@@ -17,6 +17,10 @@ namespace NLayerApp.DAL.Repositories
         {
             this.db = new StoreContext(connectionString);
         }
+        //public EFUnitOfWork()
+        //{
+        //    this.db = new StoreContext();
+        //}
         public IRepository<Item> Items
         {
             get

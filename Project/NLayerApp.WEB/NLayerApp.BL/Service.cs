@@ -19,12 +19,22 @@ namespace NLayerApp.BL
         }
         public void addItem(ItemDTO itemDto)
         {
-            // Store store = Database.Stores.Get(itemDto.Id);
+             Store store = Database.Stores.Get(itemDto.StoreId);
+            Item item = new Item
+            {
+                Name = itemDto.Name,
+                Description = itemDto.Description,
+                Sum = itemDto.Sum,
+                Date = DateTime.Now,
+                StoreId = store.Id
+            };
+            Database.Items.Create(item);
+            Database.Save();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Database.Dispose();
         }
 
         public StoreDTO GetStore(int? id)
@@ -39,8 +49,10 @@ namespace NLayerApp.BL
 
         public IEnumerable<StoreDTO> GetStores()
         {
+            
             Mapper.Initialize(cfg => cfg.CreateMap<Store, StoreDTO>());
-            return Mapper.Map<IEnumerable<Store>, IEnumerable<StoreDTO>>(Database.Stores.GetAll());
+            var result = Mapper.Map<IEnumerable<Store>, IEnumerable<StoreDTO>>(Database.Stores.GetAll());
+            return result;
         }
     }
 }
