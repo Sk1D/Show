@@ -18,26 +18,25 @@ namespace NLayerApp.WEB.Controllers
         {
             this.serv = service;
         }
+
         public ActionResult Index()
         {
             IEnumerable<StoreDTO> col = serv.GetStores();
-            //Mapper.Initialize(cfg => cfg.CreateMap<StoreDTO, StoreViewModel>()
-            //.ForMember(x => x.Id, x => x.MapFrom(m => m.Id))
-            //.ForMember(x => x.Name, x => x.MapFrom(m => m.Name))
-            //.ForMember(x => x.Address, x => x.MapFrom(m => m.Address))
-            //.ForMember(x => x.OpenningTimes, x => x.MapFrom(m => m.OpenningTimes)));
-            //var stores = Mapper.Map<IEnumerable<StoreDTO>, List<StoreViewModel>>(serv.GetStores());
-
-            // Настройка AutoMapper
             Mapper.Initialize(cfg => cfg.CreateMap<StoreDTO, StoreViewModel>());
-            // сопоставление
             var stores =
                 Mapper.Map<IEnumerable<StoreDTO>, List<StoreViewModel>>(col);
-
-            //Mapper.CreateMap<StoreDTO, StoreViewModel>();
-            //var stores = Mapper.Map<IEnumerable<StoreDTO>, List<StoreViewModel>>(serv.GetStores());
             return View(stores);
         }
+
+        public JsonResult Find(int? id)
+        {
+            IEnumerable<ItemDTO> model = serv.GetItems(id);
+            Mapper.Initialize(cfg => cfg.CreateMap<ItemDTO, ItemViewModel>());
+            var items =
+                Mapper.Map<IEnumerable<ItemDTO>, List<ItemViewModel>>(model);
+            return Json(items, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult MakeItem(int? id)
         {
             var model = serv.GetStore(id);
@@ -50,6 +49,7 @@ namespace NLayerApp.WEB.Controllers
             return View(result);
 
         }
+
         [HttpPost]
         public ActionResult MakeItem(ItemViewModel item)
         {
@@ -58,14 +58,19 @@ namespace NLayerApp.WEB.Controllers
                 Mapper.Initialize(cfg => cfg.CreateMap<ItemViewModel, ItemDTO>());
                 var itemDto = Mapper.Map<ItemViewModel, ItemDTO>(item);
                 serv.addItem(itemDto);
-                return Content("<h2>Ваш заказ успешно оформлен</h2>");
+
+              return  RedirectToAction("Index");
             }
             catch(Exception e)
             {
-                var m = e;
+                throw new Exception("Error data automapper", e);
             }
 
-            return View(item);
+        }
+
+        public ActionResult IndexItems()
+        {
+            return View();
         }
         protected override void Dispose(bool disposing)
         {

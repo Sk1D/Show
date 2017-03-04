@@ -17,6 +17,7 @@ namespace NLayerApp.BL
         {
             this.Database = uow;
         }
+
         public void addItem(ItemDTO itemDto)
         {
              Store store = Database.Stores.Get(itemDto.StoreId);
@@ -52,6 +53,14 @@ namespace NLayerApp.BL
             
             Mapper.Initialize(cfg => cfg.CreateMap<Store, StoreDTO>());
             var result = Mapper.Map<IEnumerable<Store>, IEnumerable<StoreDTO>>(Database.Stores.GetAll());
+            return result;
+        }
+
+        public IEnumerable<ItemDTO> GetItems(int? store_id)
+        {
+            var resultItems = Database.Items.Find(x => x.StoreId == store_id);
+            Mapper.Initialize(cfg => cfg.CreateMap<Item, ItemDTO>());
+            var result = Mapper.Map<IEnumerable<Item>, IEnumerable<ItemDTO>>(resultItems);
             return result;
         }
     }

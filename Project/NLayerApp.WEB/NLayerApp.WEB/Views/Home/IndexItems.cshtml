@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+@model IEnumerable<NLayerApp.ViewModel.ItemViewModel>
+@*<div class="content" ng-show="loaded">
+
+            <div ng-repeat="modelItem in modelItems">
+                <p>{{modelItem.Name}} </p>
+                <p>{{modelItem.Description}}</p>
+                <p>{{modelItem.Sum}}</p>
+            </div>
+
+    </div>*@
+<div class="content" ng-show="loaded">
+    <table class="table">
+        <tr>
+
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+               Sum
+            </th>
+            <th></th>
+        </tr>
+
+        <tr ng-repeat="modelItem in modelItems">
+            <td>
+                {{modelItem.Name}}
+            </td>
+            <td>
+                {{modelItem.Description}}
+            </td>
+            <td>
+                {{modelItem.Sum}}
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+
+
+    </table>
+</div>

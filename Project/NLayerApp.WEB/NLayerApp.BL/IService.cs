@@ -12,6 +12,7 @@ namespace NLayerApp.BL
         void addItem(ItemDTO itemDto);
         StoreDTO GetStore(int? id);
         IEnumerable<StoreDTO> GetStores();
+        IEnumerable<ItemDTO> GetItems(int? store_id);
         void Dispose();
     }
 }
