@@ -34,7 +34,7 @@ namespace NLayerApp.DI
         {
             kernal.Bind<IService>().To<Service>();
             kernal.Bind<IUnitOfWork>().To<EFUnitOfWork>().WithConstructorArgument("DefaultConnection");
-           // kernal.Bind<IUnitOfWork>().To<EFUnitOfWork>();
+            //kernal.Bind<IUnitOfWork>().To<EFUnitOfWork>();
         }
     }
 }
