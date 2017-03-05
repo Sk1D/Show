@@ -9,6 +9,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace NLayerApp.WEB.Controllers
 {
     public class HomeController : Controller
@@ -27,7 +28,7 @@ namespace NLayerApp.WEB.Controllers
                 Mapper.Map<IEnumerable<StoreDTO>, List<StoreViewModel>>(col);
             return View(stores);
         }
-
+        [HttpGet]
         public JsonResult Find(int? id)
         {
             IEnumerable<ItemDTO> model = serv.GetItems(id);
@@ -35,6 +36,13 @@ namespace NLayerApp.WEB.Controllers
             var items =
                 Mapper.Map<IEnumerable<ItemDTO>, List<ItemViewModel>>(model);
             return Json(items, JsonRequestBehavior.AllowGet);
+        }
+        [HttpPost]
+        public JsonResult DeleteItem(int id)
+        {
+            int store_id = serv.GetStoreId(id);
+            serv.delItem(id);
+            return this.Find(store_id);
         }
 
         public ActionResult MakeItem(int? id)

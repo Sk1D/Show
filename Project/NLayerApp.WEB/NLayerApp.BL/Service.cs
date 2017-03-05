@@ -32,6 +32,11 @@ namespace NLayerApp.BL
             Database.Items.Create(item);
             Database.Save();
         }
+        public void delItem(int? id)
+        {
+            Database.Items.Delete(id.Value);
+            Database.Save();
+        }
 
         public void Dispose()
         {
@@ -41,9 +46,7 @@ namespace NLayerApp.BL
         public StoreDTO GetStore(int? id)
         {
             var store = Database.Stores.Get(id.Value);
-            // Настройка AutoMapper
             Mapper.Initialize(cfg => cfg.CreateMap<Store, StoreDTO>());
-            // сопоставление
             var result = Mapper.Map<Store, StoreDTO>(store);
             return result;
         }
@@ -62,6 +65,12 @@ namespace NLayerApp.BL
             Mapper.Initialize(cfg => cfg.CreateMap<Item, ItemDTO>());
             var result = Mapper.Map<IEnumerable<Item>, IEnumerable<ItemDTO>>(resultItems);
             return result;
+        }
+
+        public int GetStoreId(int? items_id)
+        {
+            var resultItems = Database.Items.Find(x => x.Id == items_id);
+            return resultItems.FirstOrDefault().StoreId;
         }
     }
 }

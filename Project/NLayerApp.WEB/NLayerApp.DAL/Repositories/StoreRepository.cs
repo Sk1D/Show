@@ -15,7 +15,7 @@ namespace NLayerApp.DAL.Repositories
         public StoreRepository(StoreContext context)
         {
             this.db = context;
-            var nn = context.Stores.Count();
+            
         }
         public void Create(Store value)
         {
