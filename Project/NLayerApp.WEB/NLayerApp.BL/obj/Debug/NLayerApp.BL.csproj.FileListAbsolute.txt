@@ -1,0 +1,12 @@
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\NLayerApp.BL.dll.config
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\NLayerApp.BL.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\NLayerApp.BL.pdb
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\AutoMapper.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\NLayerApp.DAL.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\EntityFramework.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\NLayerApp.DAL.pdb
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\AutoMapper.xml
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\bin\Debug\EntityFramework.xml
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\obj\Debug\NLayerApp.BL.csprojResolveAssemblyReference.cache
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\obj\Debug\NLayerApp.BL.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.BL\obj\Debug\NLayerApp.BL.pdb

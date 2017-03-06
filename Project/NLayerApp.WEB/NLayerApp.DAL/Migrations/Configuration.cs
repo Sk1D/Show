@@ -28,7 +28,6 @@ namespace NLayerApp.DAL.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
             var stores = new List<Store>
                         {
                             new Store { Id=1,
@@ -66,6 +65,6 @@ namespace NLayerApp.DAL.Migrations
             stores.ForEach(x => db.Stores.AddOrUpdate(x));
             db.SaveChanges();
         }
-    
     }
+    
 }

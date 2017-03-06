@@ -15,6 +15,7 @@ namespace NLayerApp.DAL.Repositories
         public StoreRepository(StoreContext context)
         {
             this.db = context;
+            
         }
         public void Create(Store value)
         {

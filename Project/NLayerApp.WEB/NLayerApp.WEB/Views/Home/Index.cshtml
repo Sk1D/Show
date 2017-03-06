@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+
 <body ng-app="itemApp">
     <p>
         @Html.ActionLink("Create New", "Create")
@@ -13,13 +13,16 @@
         <table class="table">
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Name)
+                    @*@Html.DisplayNameFor(model => model.Name)*@       
+                    Название             
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Address)
+                    @*@Html.DisplayNameFor(model => model.Address)*@
+                    Описание
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.OpenningTimes)
+                    @*@Html.DisplayNameFor(model => model.OpenningTimes)*@
+                    Режим работы
                 </th>
                 <th></th>
             </tr>
@@ -36,15 +39,12 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.OpenningTimes)
                     </td>
-                    <td>
-                        
+                    <td>                        
                         @Html.ActionLink("Добавить товар", "MakeItem", new { id = item.Id }) |
                         <a href="javascript:void(0);" ng-click="load(@item.Id)">показать товар</a>
                     </td>
                 </tr>
             }
-
-
         </table>
         <hr />
         <ng-include src="'@Url.Action("IndexItems", "Home")'"></ng-include> 

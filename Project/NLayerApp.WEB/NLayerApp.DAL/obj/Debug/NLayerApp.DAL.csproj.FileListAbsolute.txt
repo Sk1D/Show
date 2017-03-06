@@ -1,0 +1,12 @@
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\NLayerApp.DAL.dll.config
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\NLayerApp.DAL.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\NLayerApp.DAL.pdb
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\EntityFramework.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\EntityFramework.xml
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\obj\Debug\NLayerApp.DAL.Migrations.start.resources
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\obj\Debug\NLayerApp.DAL.csproj.GenerateResource.Cache
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\obj\Debug\NLayerApp.DAL.dll
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\obj\Debug\NLayerApp.DAL.pdb
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.DAL\obj\Debug\NLayerApp.DAL.csprojResolveAssemblyReference.cache
