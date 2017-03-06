@@ -2,3 +2,4 @@ D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\NLayerApp.ViewModel.pdb
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.dll
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.pdb
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.csprojResolveAssemblyReference.cache

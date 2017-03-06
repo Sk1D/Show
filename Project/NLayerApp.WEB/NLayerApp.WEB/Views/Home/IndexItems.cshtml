@@ -2,27 +2,18 @@
     Layout = null;
 }
 @model IEnumerable<NLayerApp.ViewModel.ItemViewModel>
-@*<div class="content" ng-show="loaded">
-
-            <div ng-repeat="modelItem in modelItems">
-                <p>{{modelItem.Name}} </p>
-                <p>{{modelItem.Description}}</p>
-                <p>{{modelItem.Sum}}</p>
-            </div>
-
-    </div>*@
 <div class="content" ng-show="loaded">
     <table class="table">
         <tr>
 
             <th>
-                Name
+                Имя товара
             </th>
             <th>
-                Description
+                Описание
             </th>
             <th>
-               Sum
+               Сумма
             </th>
             <th></th>
         </tr>
@@ -38,8 +29,8 @@
                 {{modelItem.Sum}}
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |            
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@            
                 <a href="javascript:void(0);" ng-click="delete(modelItem.Id)">удалить товар</a>
             </td>
         </tr>
