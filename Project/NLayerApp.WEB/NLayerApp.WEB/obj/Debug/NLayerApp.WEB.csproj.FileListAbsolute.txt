@@ -1,3 +1,4 @@
+D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\NLayerApp.WEB.dll
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\roslyn\csc.exe
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -11,7 +12,6 @@ D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\roslyn\vbc.e
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\roslyn\VBCSCompiler.exe
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\roslyn\VBCSCompiler.exe.config
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\NLayerApp.WEB.dll.config
-D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\NLayerApp.WEB.dll
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\NLayerApp.WEB.pdb
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\Antlr3.Runtime.dll
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.WEB\bin\AutoMapper.dll
