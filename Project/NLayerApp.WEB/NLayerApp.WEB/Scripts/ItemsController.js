@@ -9,7 +9,7 @@ myApp.controller('ItemsController',
                 id: val
             };
             console.log("id:" + val);
-            $http.get('/Home/Find/', { params: params }).then(
+            $http.get('/api/Values/', { params: params }, { headers: { 'Content-Type': 'application/json' } }).then(
                 function (successResponse) {
                     $scope.modelItems = successResponse.data;
                     console.log('success');
@@ -23,7 +23,7 @@ myApp.controller('ItemsController',
         };
         $scope.delete = function (val) {
             $http({
-                url: '/Home/DeleteItem/',//+val,
+                url: '/Home/DeleteItem/',
                 method: "POST",
                 data: { id: val },
                 headers: { 'Content-Type': 'application/json' }
@@ -32,7 +32,19 @@ myApp.controller('ItemsController',
                 $scope.modelItems = response.data;
                 $scope.loaded = true;
             }, function errorCallback() {
-                alert("Ошибка");
+                alert("Ошибка delete");
+            });
+        };
+        $scope.deleteAPI = function (val) {
+            $http({
+                url: '/api/Values/' + val,
+                method: "DELETE",
+                headers: { 'Content-Type': 'application/json' }
+            }).then(function successCallback(response) {
+                console.log('id_store:' + response.data);
+                $scope.load(response.data)
+            }, function errorCallback() {
+                alert("Ошибка deleteAPI");
             });
         }
 
