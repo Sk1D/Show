@@ -8,8 +8,8 @@
  
 Требования к технологиям
 1.        ASP.NET MVC 4-5
-2.        UI – MVC Razor, Ajax подгрузка товаров
-AngularJS
+2.        UI – MVC Razor,  подгрузка товаров
+Web API+AngularJS
 3.        MiddleTier – ORM EF6, Repository
 Unit of work 
 4.        DB - MSSQLServer
