@@ -8,10 +8,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NLayerApp.BL.Filters;
 
 
 namespace NLayerApp.WEB.Controllers
 {
+    [Culture]
     public class HomeController : Controller
     {
         private IService serv;
@@ -44,17 +46,24 @@ namespace NLayerApp.WEB.Controllers
         [HttpPost]
         public ActionResult MakeItem(ItemViewModel item)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                Mapper.Initialize(cfg => cfg.CreateMap<ItemViewModel, ItemDTO>());
-                var itemDto = Mapper.Map<ItemViewModel, ItemDTO>(item);
-                serv.addItem(itemDto);
-
-              return  RedirectToAction("Index");
+                return View(item);
             }
-            catch(Exception e)
+            else
             {
-                throw new Exception("Error data automapper", e);
+                try
+                {
+                    Mapper.Initialize(cfg => cfg.CreateMap<ItemViewModel, ItemDTO>());
+                    var itemDto = Mapper.Map<ItemViewModel, ItemDTO>(item);
+                    serv.addItem(itemDto);
+
+                    return RedirectToAction("Index");
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Error data automapper", e);
+                }
             }
 
         }
@@ -67,6 +76,31 @@ namespace NLayerApp.WEB.Controllers
         {
             serv.Dispose();
             base.Dispose(disposing);
+        }
+        public ActionResult ChangeCulture(string lang)
+        {
+            string returnUrl = Request.UrlReferrer.AbsolutePath;
+            List<string> culture = new List<string> { "ru", "en", "de" };
+            if (!culture.Contains(lang))
+            {
+                lang = "ru";
+            }
+            HttpCookie cookie = Request.Cookies["Language"];
+            if (cookie == null)
+            {
+                HttpCookie aCookie = new HttpCookie("Language");
+                aCookie.Values["lang"] = lang;
+                aCookie.HttpOnly = false;
+                aCookie.Expires = DateTime.Now.AddDays(1);
+                Response.Cookies.Add(aCookie);
+            }
+            else
+            {
+                cookie.Values["lang"] = lang;
+                Response.Cookies.Add(cookie);
+            }
+
+            return Redirect(returnUrl);
         }
     }
 }

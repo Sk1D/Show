@@ -3,3 +3,16 @@ D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.csprojResolveAssemblyReference.cache
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.dll
 D:\ItAcademy.VS2015\Testing\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.pdb
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\NLayerApp.ViewModel.dll
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\NLayerApp.ViewModel.pdb
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.dll
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.pdb
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.csprojResolveAssemblyReference.cache
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\de\NLayerApp.ViewModel.resources.dll
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\bin\Debug\en\NLayerApp.ViewModel.resources.dll
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.ResourcesViewModel.ResourceView.resources
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.ResourcesViewModel.ResourceView.de.resources
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.ResourcesViewModel.ResourceView.en.resources
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\NLayerApp.ViewModel.csproj.GenerateResource.Cache
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\de\NLayerApp.ViewModel.resources.dll
+D:\project\Project\NLayerApp.WEB\NLayerApp.ViewModel\obj\Debug\en\NLayerApp.ViewModel.resources.dll

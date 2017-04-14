@@ -1,4 +1,5 @@
-﻿using NLayerApp.DI;
+﻿//using NLayerApp.BL.Filters;
+using NLayerApp.DI;
 using NLayerApp.WEB.App_Start;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,11 @@ namespace NLayerApp.WEB
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);          
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+           // FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+           // GlobalFilters.Filters.Add(new CultureAttribute());
+           // RegisterGlobalFilters(GlobalFilters.Filters);
+       
         }
     }
 }

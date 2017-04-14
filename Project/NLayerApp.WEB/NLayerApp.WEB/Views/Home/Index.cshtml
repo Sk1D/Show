@@ -14,15 +14,15 @@
             <tr>
                 <th>
                     @*@Html.DisplayNameFor(model => model.Name)*@       
-                    Название             
+                    @Resources.Resource.NameStore            
                 </th>
                 <th>
                     @*@Html.DisplayNameFor(model => model.Address)*@
-                    Описание
+                    @Resources.Resource.AddressStore
                 </th>
                 <th>
                     @*@Html.DisplayNameFor(model => model.OpenningTimes)*@
-                    Режим работы
+                    @Resources.Resource.WorkTime
                 </th>
                 <th></th>
             </tr>
@@ -40,8 +40,8 @@
                         @Html.DisplayFor(modelItem => item.OpenningTimes)
                     </td>
                     <td>                        
-                        @Html.ActionLink("Добавить товар", "MakeItem", new { id = item.Id }) |
-                        <a href="javascript:void(0);" ng-click="load(@item.Id)">показать товар</a>
+                        @Html.ActionLink(@Resources.Resource.AddGoodsLink, "MakeItem", new { id = item.Id }) |
+                        <a href="javascript:void(0);" ng-click="load(@item.Id)">@Resources.Resource.ShowGoodsLink</a>
                     </td>
                 </tr>
             }

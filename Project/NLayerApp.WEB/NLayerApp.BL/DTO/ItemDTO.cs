@@ -11,7 +11,7 @@ namespace NLayerApp.BL.DTO
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public decimal Sum { get; set; }
+        public int Sum { get; set; }
         public int StoreId { get; set; }
         public DateTime Date { get; set; }
     }
